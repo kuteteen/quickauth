@@ -22,42 +22,41 @@
   </head>
 
   <body>
-<!-- Navbar
-    ================================================== --> 
-<!-- 定义个navbar --> 
-<!-- 基础框架 --> 
-<!-- 同一个class 不同文件都有的情况下,都可能加载.重合部分覆盖 --> 
-<!-- 定义在文档整体和相邻元素之间的布局关系 -->
-<div class="navbar navbar-inverse navbar-fixed-top"> 
-  <!-- 定义个内部框架表现的基调,位置大小背景等 -->
-  <div class="navbar-inner"> 
-    <!-- 定义实现块的css,具体内容都包含在container中 -->
-    <div class="container"> 
-      <!-- 定义响应时用的按钮元素,界面大小改变时会用到 -->
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <!-- 定义品牌链接导航 --> 
-      <!-- 不知道为什么这么定义 --> 
-      <a class="brand" href="./index.html">Bootstrap</a> 
-      <!-- 定义了个响应触发点 -->
-      <div class="nav-collapse collapse"> 
-        <!-- 定义导航列表 -->
-        <ul class="nav">
-          <!-- 首页链接高亮 -->
-          <li class=""> <a href="./index.html">首页</a> </li>
-          <!-- 一个导航分类一个li -->
-          <li class=""> <a href="./getting-started.html">入门</a> </li>
-          <li class=""> <a href="./scaffolding.html">框架</a> </li>
-          <li class=""> <a href="./base-css.html">基本CSS样式</a> </li>
-          <li class="active"> <a href="./components.html">组件</a> </li>
-          <li class=""> <a href="./javascript.html">JavaScript插件</a> </li>
-          <li class=""> <a href="./customize.html">定制</a> </li>
-        </ul>
+<!--首部导航栏-->
+   <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-sm" href="#">首页</a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li class="hidden-sm hidden-md">
+                        <a href="#" >最新动态</a> </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">师资力量<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" target="_blank">院士</a></li>
+                <li><a href="#" target="_blank">博导</a></li>
+                <li><a href="#" target="_blank">教授</a></li>
+                <li> <a href="#" target="_blank">副教授</a></li>
+                <li><a href="#" target="_blank">讲师</a></li>
+              </ul>
+	    </li>
+            <li class="hidden-sm hidden-md"><a href="#" >机构设置</a> </li>
+            <li class="hidden-sm hidden-md"><a href="#" >科研团队</a> </li>
+            <li class="hidden-sm hidden-md"><a href="#" >学生园地</a> </li>
+            <li class="hidden-sm hidden-md"><a href="#" >帮助</a> </li>
+         </ul>
+
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Subhead    
 
 <div class="container">
 
