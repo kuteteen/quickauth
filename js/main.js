@@ -1,7 +1,7 @@
-$(function(){
-$(".forget-pwd").click(function(){
+
+$("#forget-pwd").click(function(){
     alert("reset pwd");
 }
 );
 
-});
+
