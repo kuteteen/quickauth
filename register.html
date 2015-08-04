@@ -58,8 +58,9 @@
 	</div>
 
 	<div class="container">
-		<div class="center">
+		<div id="register">
 			<form class="form-register">
+				<h2>Register</h2>
 				<div class="form-group">
 					<label class="sr-only" for="inputUsername">Username</label>
 					<div class="input-group">
@@ -87,13 +88,13 @@
 						<input type="password" class="form-control" id="password" placeholder="Password" required />
 					</div>
 				</div>
-				<div class="form-group">
-					<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-					<div class="input-group">
-						<div class="input-group-addon">用户名</div>
-						<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount" />
-					</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="accept-terms" required /> I have read <a href="#" target="_blank">terms</a> and accept them
+					</label>
 				</div>
+				<button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+
 			</form>
 		</div>
 	</div> <!-- /container -->
