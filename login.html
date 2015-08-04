@@ -58,28 +58,32 @@
       </div>
     </div>
     <div class="container">
-
-      <form class="form-signin" action="login.html">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-	  <label>
-	    <span><abbr title="Click to reset your password" class="text-right" id="forget-pwd">forget pwd?</abbr></span>
- 	  </label>        
-	</div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
-      </form>
-      <div class="alert alert-danger alert-dismissable my-info"  style="display:none">
-   	<button type="button" class="close" data-dismiss="alert"  aria-hidden="true">
-          &times;
-	</button>
-        密码错误
+      <div id="login">
+        <form class="form-signin" action="login.html">
+          <h2 class="form-signin-heading">Please sign in</h2>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control " placeholder="Email address" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+	    <label>
+	      <span><abbr title="Click to reset your password" class="text-right" id="forget-pwd">Forget pwd?</abbr></span>
+ 	    </label>        
+	  </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+        <p class="msg">
+          <a href="register.html" >Register</a>
+        </p>
+        <div class="alert alert-danger alert-dismissable my-info"  style="display:block">
+      	  <button type="button" class="close" data-dismiss="alert"  aria-hidden="true">
+            &times;
+	  </button>
+          密码错误
+        </div>
+        </form>
       </div>
     </div> <!-- /container -->
    
